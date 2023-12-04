@@ -1,6 +1,6 @@
 # 固定碼(738)+產品別 + 流水碼 + 下拉選擇(SAS/方向1/方向2) + 流水號:00000-99999 - 客戶別
 
-# Written by Benson Yeh, 1/10/2022, Aces Electronics Co., Ltd.
+# Written by Benson Yeh, 1/10/2022,
 
 import sys
 import psycopg2
@@ -34,7 +34,7 @@ class Controller(QMainWindow, Ui_MainWindow):
         '''
         連線資料庫
         '''
-        self.conn = psycopg2.connect(database = "Hight_speed_db", user = "postgres", password = "a@880126", 
+        self.conn = psycopg2.connect(database = "Hight_speed_db", user = "postgres", password = "a@00", 
                                      host =  "127.0.0.1", port = "5432")
         # # 設置自動提交
         self.conn.autocommit = True
